@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crack The Code Learning</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    header.hero {
+      background: #f0f4ff;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    header.hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    header.hero p {
+      font-size: 1.2rem;
+    }
+    section.split {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    @media (min-width: 768px) {
+      section.split {
+        flex-direction: row;
+        align-items: center;
+      }
+      section.split img {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Crack The Code Learning</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#programmes">Programmes</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Empowering Tomorrow's Achievers</h1>
+    <p>Personalised learning programmes designed for Singaporean success.</p>
+    <img src="hero-image.jpeg" alt="Hero image" style="margin-top: 2rem; max-width: 100%; border-radius: 8px;" />
+  </header>
+
+  <main class="container">
+    <section class="split" id="programmes">
+      <img src="https://via.placeholder.com/600x400.png?text=Classroom+Learning" alt="Classroom">
+      <div>
+        <h2>Our Signature Programmes</h2>
+        <p>From Primary to Secondary, our tailored modules cover the MOE syllabus and are infused with analytical thinking and real-world application. Our approach cultivates independence and mastery.</p>
+      </div>
+    </section>
+
+    <section class="split" id="testimonials" style="margin-top: 5rem;">
+      <div>
+        <h2>What Parents Say</h2>
+        <p>“Crack The Code helped my son move from struggling in Math to topping his class. The lessons are fun, focused, and highly effective.”</p>
+        <p><strong>– Mrs Tan, Parent of P5 student</strong></p>
+      </div>
+      <img src="https://via.placeholder.com/600x400.png?text=Happy+Parent+and+Child" alt="Testimonial">
+    </section>
+  </main>
+
+  <section aria-label="Subscribe example" style="margin-top: 5rem;">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Stay Updated</h2>
+          <h3>Get updates on classes, results and offers</h3>
+        </hgroup>
+        <form class="grid">
+          <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="First name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" aria-label="Email address" required />
+          <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container" style="margin-top: 4rem;">
+    <small><a href="#">Privacy Policy</a> • <a href="#">Terms & Conditions</a></small>
+  </footer>
+</body>
+</html>
