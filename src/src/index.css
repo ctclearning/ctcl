@@ -1,0 +1,12 @@
+/* Pico handles most styling; a few light utilities */
+:root { --brand: #111; }
+header { position: sticky; top: 0; backdrop-filter: blur(4px); }
+nav a { text-decoration: none; }
+.btn { display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:999px; }
+.btn-dark { background: var(--brand); color:#fff; }
+.btn-outline { border:1px solid #ccc; }
+.grid-2 { display:grid; gap:1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 900px){ .grid-2 { grid-template-columns: 1fr 1fr; } }
+.card { border:1px solid #e5e5e5; border-radius:16px; padding:1rem; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+.small { font-size: .9rem; color:#666; }
